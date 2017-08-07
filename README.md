@@ -4,8 +4,8 @@ does math calculations on the server.
 (*, /, +, -)
 
 ## Task List
-- [ ] Static files on locallhost
-- [ ] Add jQUery and source client.js
+- [x] Static files on locallhost
+- [x] Add jQUery and source client.js
 - [ ] add a form on the client with two inputs and a button
 - [ ] create AJAX request
 - [ ] add a route for calculate in the app.js
