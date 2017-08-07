@@ -1,5 +1,10 @@
 $(document).ready(function() {
     console.log('jquery sourced');
+    $('#clearButton').on('click', function() {
+        $('#firstInput').val('');
+        $('#secondInput').val('');
+    });
+
     //when a calculation is clicked
     $('.calcButton').on('click', function() {
         //opp is the key that we attached with data-opp

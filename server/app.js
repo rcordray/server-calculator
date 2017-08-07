@@ -31,7 +31,7 @@ app.post('/calculator', function(req, res) {
                 break;
         }
         //store the mathResult
-        mathResult = firstNumber + secondNumber;
+        // mathResult = firstNumber + secondNumber;
         res.sendStatus(200);
     })
     // request to ge mathResult

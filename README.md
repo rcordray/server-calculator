@@ -12,9 +12,10 @@ does math calculations on the server.
 - [X] get results back to client
 - [X] display on the DOM
 - [X] add remaining operators
-- [ ] clear button
+- [X] clear button
 
 
 ## Stretch Goal
+- [ ] npm start script
 - [ ] move to modules
 - [ ] convert input fields to a form
