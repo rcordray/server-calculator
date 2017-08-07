@@ -9,6 +9,22 @@ var port = 5000;
 //default will look for index.html
 app.use(express.static('public'));
 
+var mathResult = 0;
+//do calculation and store in MathResult
+app.post('/calculator', function(req, res) {
+        console.log(req.body);
+        // number validation here
+        var firstNumber = parseInt(req.body.x);
+        var secondNumber = parseInt(req.body.y)
+            //store the mathResult
+        mathResult = firstNumber + secondNumber;
+        res.sendStatus(200);
+    })
+    // request to ge mathResult
+app.get('/calculator', function(req, res) {
+    res.send({ result: mathResult });
+})
+
 app.listen(port, function() {
     console.log('listening on port', port);
 
