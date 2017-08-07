@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 var port = 5000;
 //default will look for index.html
 app.use(express.static('public'));
-
+// used to store latest result
 var mathResult = 0;
 //do calculation and store in MathResult
 app.post('/calculator', function(req, res) {
@@ -16,7 +16,21 @@ app.post('/calculator', function(req, res) {
         // number validation here
         var firstNumber = parseInt(req.body.x);
         var secondNumber = parseInt(req.body.y)
-            //store the mathResult
+        switch (req.body.opp) {
+            case 'add':
+                mathResult = firstNumber + secondNumber;
+                break;
+            case 'subtract':
+                mathResult = firstNumber - secondNumber;
+                break;
+            case 'multiply':
+                mathResult = firstNumber * secondNumber;
+                break;
+            case 'divide':
+                mathResult = firstNumber / secondNumber;
+                break;
+        }
+        //store the mathResult
         mathResult = firstNumber + secondNumber;
         res.sendStatus(200);
     })

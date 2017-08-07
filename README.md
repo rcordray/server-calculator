@@ -9,11 +9,12 @@ does math calculations on the server.
 - [x] add a form on the client with two inputs and a button
 - [X] create AJAX request
 - [X] add a route for calculate in the app.js
-- [ ] get results back to client
-- [ ] display on the DOM
-- [ ] add remaining operators
+- [X] get results back to client
+- [X] display on the DOM
+- [X] add remaining operators
 - [ ] clear button
 
 
 ## Stretch Goal
-- [ ] 
+- [ ] move to modules
+- [ ] convert input fields to a form
